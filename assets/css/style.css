@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Segoe UI";
+    font-display: swap;
+    src: url("../fonts/segoe_ui.ttf") format("truetype");
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -7,6 +13,8 @@ html, body {
 }
 
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif !important;
     background-image: url('../imgs/wallpaper.jpg');
+    /* scrollbar-color: rgba(35, 105, 47, 0.8) rgba(31, 31, 31, 0.65);
+    cursor: url(), auto; */
 }
