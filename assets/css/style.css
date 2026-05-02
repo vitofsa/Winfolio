@@ -15,6 +15,23 @@ html, body {
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif !important;
     background-image: url('../imgs/wallpaper.jpg');
-    /* scrollbar-color: rgba(35, 105, 47, 0.8) rgba(31, 31, 31, 0.65);
-    cursor: url(), auto; */
+    background-size: cover;
+    scrollbar-color: rgba(130, 51, 167, 0.8) rgba(31, 31, 31, 0.65);
+    cursor: url('../imgs/cursors/arrow.cur'), default;
+    /* cursor: url('../imgs/cursors/helpsel.cur'), help; */
+    /* cursor: url('../imgs/cursors/working.ani'), progress; */
+    /* cursor: url('../imgs/cursors/cross.cur'), crosshair;
+    cursor: url('../imgs/cursors/busy.ani'), wait;
+    cursor: url('../imgs/cursors/text.ani'), text;
+    cursor: url('../imgs/cursors/unavail.cur'), not-allowed;
+    cursor: url('../imgs/cursors/move.cur'), move;
+    cursor: url('../imgs/cursors/we.cur'), ew-resize;
+    cursor: url('../imgs/cursors/ns.cur'), ns-resize;
+    cursor: url('../imgs/cursors/ns.cur'), nesw-resize;
+    cursor: url('../imgs/cursors/nesw.cur'), nesw-resize;
+    cursor: url('../imgs/cursors/nwse.cur'), nwse-resize; */
+}
+
+a {
+    cursor: url('../imgs/cursors/link.cur'), pointer;
 }
