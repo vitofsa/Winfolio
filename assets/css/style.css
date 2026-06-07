@@ -32,6 +32,11 @@ body {
     cursor: url('../imgs/cursors/nwse.cur'), nwse-resize; */
 }
 
+body[data-modo="light"] {
+    background-image: url('../imgs/wallpaper-light.jpg');
+    scrollbar-color: rgba(158, 108, 250, 0.699) rgba(255, 255, 255, 0.685)
+}
+
 a {
     cursor: url('../imgs/cursors/link.cur'), pointer;
 }

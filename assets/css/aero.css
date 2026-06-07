@@ -1,4 +1,4 @@
-/* FRUTIGER AERO STYLE FOR CSS */
+/* FRUTIGER AERO PRO CSS */
 
 .f-aero-view {
     max-width: 950px;
@@ -19,6 +19,7 @@
     img {
         border-radius: 100%;
         max-height: 100px;
+        min-width: 50px;
     }
 
     h1 {
@@ -36,7 +37,7 @@
 }
 
 .f-aero-content {
-    background: rgba(39, 39, 39, .7);
+    background: url('../imgs/aero_glass.png') rgba(39, 39, 39, .7);
     border-right: 1px solid #3b3b3b;
     border-bottom: 1px solid #3b3b3b;
     border-bottom-right-radius: 3px;
@@ -50,7 +51,7 @@
 }
 
 .f-aero-menu {
-    background-color: rgba(20, 20, 20, .85);
+    background-color: rgba(20, 20, 20, .65);
     border-right: 1px solid #474747;
     border-left: 1px solid #474747;
     border-bottom: 1px solid #474747;
@@ -64,6 +65,7 @@
     nav {
         background: rgba(26, 26, 26, .35);
         border: 1px solid #424242;
+        border-radius: 5px;
         display: flex;
         flex-direction: column;
         padding: 1px 3px;
@@ -91,15 +93,19 @@
             font-size: 12px;
             position: relative;
             text-decoration: none;
+            transition: .2s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+            background: linear-gradient(to bottom, rgba(255, 255, 255, .25) 0, rgba(117, 117, 117, .15) 20%, rgba(92, 92, 92, .15) 60%, rgba(0, 0, 0, .2) 60%, rgba(41, 41, 41, .1) 100%);
 
             &.nav-ativo {
                 background: linear-gradient(to bottom, rgba(255, 255, 255, .25) 0, rgba(117, 117, 117, .2) 20%, rgba(92, 92, 92, .2) 40%, rgba(29, 73, 23, .3) 40%, rgba(165, 92, 243) 100%) !important;
-                color: #bc91e9;
-                transform: scale(1.03);
+                color: #bc91e9 !important;
+                transform: scale(1.05);
             }
 
-            &.nav-inativo {
-                background: linear-gradient(to bottom, rgba(255, 255, 255, .25) 0, rgba(117, 117, 117, .15) 20%, rgba(92, 92, 92, .15) 60%, rgba(0, 0, 0, .3) 60%, rgba(41, 41, 41, .3) 100%);
+            &:hover {
+                background: linear-gradient(to bottom, rgba(255, 255, 255, .25) 0, rgba(117, 117, 117, .15) 20%, rgba(92, 92, 92, .15) 60%, rgba(0, 0, 0, .3) 60%, rgba(41, 41, 41, .1) 100%);
+                text-decoration: underline;
+                transform: scale(1.1);
             }
         }
     }
@@ -122,6 +128,7 @@
     background: rgba(48, 48, 48, .1);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .12), inset 0 0 8px rgba(255, 255, 255, .1), 0 5px 5px rgba(0, 0, 0, .5);
     border: 1px solid #686868;
+    border-radius: 5px;
     padding: 5px;
     margin: 8px auto 8px auto;
 
@@ -145,6 +152,81 @@
 
     b {
         color: #a55cf3;
+    }
+}
+
+/* MODO ESCURO / CLARO */
+
+body[data-modo="light"] {
+    .f-aero-header {
+        background: linear-gradient(to bottom,#c29cff 0%,#b17cff 15%,#a867f7 50%,#a55cf3 90%,#9547e8 100%) !important;
+        border-right: 1px solid #b17cff;
+        border-left: 1px solid #b17cff;
+        border-top: 2px solid #b17cff;
+    
+        h2 {
+            color: #ffffff !important;
+        }
+    }
+
+    .f-aero-content {
+        background-color: rgba(222, 218, 255, 0.5);
+        border-right: 1px solid #b17cff;
+        border-bottom: 1px solid #b17cff;
+    }
+
+    .f-aero-container {
+        section {
+            color: #000;
+            background-color: #f2f4f8 !important;
+        }
+    }
+    
+    .f-aero-heading {
+        color: #ffffff;
+        background: linear-gradient(
+            to bottom,
+            #c29cff 0%,
+            #b17cff 10%,
+            #a867f7 50%,
+            #9550e8 50%,
+            #9d58ee 70%,
+            #c08eff 100%
+        );
+        border-bottom: 2px solid #8e42e3;
+    }
+
+    .f-aero-menu {
+        background: 100% rgba(222, 218, 255, .4);
+        border-right: 1px solid #b17cff;
+        border-left: 1px solid #b17cff;
+        border-bottom: 1px solid #b17cff;
+
+        nav {
+            background: #fff;
+
+            span {
+                background: linear-gradient(
+                    to bottom,
+                    #c29cff 0%,
+                    #b17cff 10%,
+                    #a867f7 50%,
+                    #9550e8 50%,
+                    #9d58ee 70%,
+                    #c08eff 100%
+                ) !important;
+                border: 1px #8e42e3 !important;
+            }
+
+            a {
+                color: #000;
+                border-color: #bbb;
+
+                &.nav-ativo {
+                    color: #8258af !important;
+                }
+            }
+        }
     }
 }
 

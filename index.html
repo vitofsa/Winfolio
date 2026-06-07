@@ -9,18 +9,23 @@
     <link rel="stylesheet" href="./assets/css/aero.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body class="container-fluid px-0 px-md-3 d-block d-md-flex align-items-center">
+<body data-modo="dark" class="container-fluid px-0 px-md-3 d-block d-md-flex align-items-center">
     <div class="f-aero-view container-fluid col-12 col-md-8 mx-0 mx-md-auto text-light">
         <!-- Header  -->
         <header class="f-aero-header row d-flex flex-wrap align-items-center justify-content-between">
-            <img class="col-2 col-md-1" src="https://avatars.githubusercontent.com/u/53355703?v=4" alt="Meu perfil">
-            <div class="col-11 d-flex flex-column justify-content-center d-none d-md-block">
+            <img class="col-2 col-lg-1" src="https://avatars.githubusercontent.com/u/53355703?v=4" alt="Meu perfil">
+            <div class="col-8 col-lg-10 d-flex flex-column justify-content-center d-none d-md-block">
                 <h1>Winfólio</h1>
                 <h2>Um portfólio tematizado com Frutiger Aero</h2>
             </div>
-            <a class="col-2 d-block d-md-none" href="">
-                <img class="img-fluid rounded-0 p-2" src="./assets/imgs/icons/menu-icon.png" alt="ícone do menu">
-            </a>
+            <div class="col-3 col-md-2 col-lg-1 d-flex">
+                <a id="switchModo" class="col-6 col-md-12">
+                    <img class="img-fluid rounded-0 p-2" src="https://img.icons8.com/3d-fluency/94/partly-cloudy-night.png"/>
+                </a>
+                <a class="col-6 d-block d-md-none" href="">
+                    <img class="img-fluid rounded-0 p-2" src="./assets/imgs/icons/menu-icon.png" alt="ícone do menu">
+                </a>
+            </div>
         </header>
 
         <!-- Conteúdos -->
@@ -98,5 +103,6 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
