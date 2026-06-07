@@ -40,3 +40,50 @@ body[data-modo="light"] {
 a {
     cursor: url('../imgs/cursors/link.cur'), pointer;
 }
+
+/* EASTER EGG */
+
+#foca-foguete {
+    position: fixed;
+    width: 120px;
+    bottom: -150px;
+    left: -150px;
+    pointer-events: none;
+    z-index: 9999;
+    display: none;
+
+    &.voando {
+        display: block;
+        animation: foguetinhoVoando 8s linear forwards;
+    }
+}
+
+@keyframes foguetinhoVoando {
+    0% {
+        transform: translate(0, 0) rotate(35deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    25% {
+        transform: translate(25vw, -20vh) rotate(30deg);
+    }
+
+    50% {
+        transform: translate(50vw, -45vh) rotate(40deg);
+    }
+
+    75% {
+        transform: translate(75vw, -70vh) rotate(30deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(calc(100vw + 300px), calc(-100vh - 300px))
+                   rotate(35deg);
+        opacity: 0;
+    }
+}

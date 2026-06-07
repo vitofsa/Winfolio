@@ -38,3 +38,24 @@ function setarModoLuz(modo) {
             break;
     }
 }
+
+// Easter egg
+
+const foguete = document.getElementById("foca-foguete");
+let focaVoando = false;
+
+document.getElementById('foca-easter-btn').addEventListener('click', function () {
+    if (!focaVoando) {
+        focaVoando = true;
+        foguete.classList.remove("voando");
+        
+        void foguete.offsetWidth;
+        
+        foguete.classList.add("voando");
+        
+        setTimeout(() => {
+            foguete.classList.remove("voando");
+            focaVoando = false;
+        }, 8000);
+    }
+})
